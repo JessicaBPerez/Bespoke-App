@@ -25,13 +25,23 @@ const traditional = new Categories({
     description: "Beautiful, feminine, and clean design with shimmering accents at the heart of this style.",
 })
 
-const French = new Categories({
+const french = new Categories({
     categoriesImg: "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwj6rt7lm-XgAhVjg-AKHeeuC2AQjRx6BAgBEAU&url=http%3A%2F%2Fwww.poandpo.com%2Fdesign-art-and-nice-stuff%2Finterior-design-de-france-14-11-2014%2F&psig=AOvVaw3ke6B6r_tXhg2bObpy09Fo&ust=1551676512830420",
     category: "French",
     description: "Beautiful, feminine, and clean design with shimmering accents at the heart of this style.",
 })
-const Eclectic = new Categories({
+const eclectic = new Categories({
     categoriesImg: "https://www.decoraid.com/wp-content/uploads/2018/08/eclectic-interior-design-style.jpg",
     category: "Eclectic",
     description: "Beautiful, feminine, and clean design with shimmering accents at the heart of this style.",
 })
+
+Categories.remove({})
+    //.then(() => Food.remove({}))
+    .then(() => Categories.create([glam, modern, rustic, traditional, french, eclectic]))
+    //.then(() => Food.insertMany([pizza, injera, padThai, fishTaco]))
+    .then(() => {
+        console.log("seeded successfully");
+        mongoose.connection.close();
+    })
+    .catch(err => console.log(err, "error!"));
