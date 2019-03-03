@@ -16,6 +16,9 @@ const categoriesController = {
     },
     edit: (req, res) => {
         res.send(`I'm editing a single category- design`)
+    },
+    update: (req, res) => {
+        res.send(`Actually editing the category in the database`)
     }
 }
 
