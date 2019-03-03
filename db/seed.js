@@ -26,8 +26,8 @@ const traditional = new Categories({
 })
 
 const French = new Categories({
-    categoriesImg: "https://www.google.com/imgres?imgurl=http%3A%2F%2Fwww.aprar.net%2F7%2F2015%2F12%2Fminimalist-modern-design-cheap-designs-for-apartments-with-gre-wall-and-white-shelves-on-the-wall-with-grey-seat-beside-glasses-coffee-table-inisde-room.jpg&imgrefurl=http%3A%2F%2Fwww.aprar.net%2Fcheap-designs-for-apartments%2Fminimalist-modern-design-cheap-designs-for-apartments-with-gre-wall-and-white-shelves-on-the-wall-with-grey-seat-beside-glasses-coffee-table-inisde-room%2F&docid=CehIWnMjk2Cg8M&tbnid=n_ZrEp4a3gC1_M%3A&vet=1&w=1608&h=1080&bih=693&biw=1442&ved=2ahUKEwjDnaCuleXgAhVChuAKHTTcASEQxiAoBXoECAEQGQ&iact=c&ictx=1",
-    category: "Modern",
+    categoriesImg: "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwj6rt7lm-XgAhVjg-AKHeeuC2AQjRx6BAgBEAU&url=http%3A%2F%2Fwww.poandpo.com%2Fdesign-art-and-nice-stuff%2Finterior-design-de-france-14-11-2014%2F&psig=AOvVaw3ke6B6r_tXhg2bObpy09Fo&ust=1551676512830420",
+    category: "French",
     description: "Beautiful, feminine, and clean design with shimmering accents at the heart of this style.",
 })
 const Eclectic = new Categories({
