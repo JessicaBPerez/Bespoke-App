@@ -16,5 +16,7 @@ router.get('/:categoryId/edit', categoriesController.edit)
 
 router.put('/:categoryId', categoriesController.update)
 
+router.delete('/:categoryId', categoriesController.delete)
+
 //Exports the routers
 module.exports = router

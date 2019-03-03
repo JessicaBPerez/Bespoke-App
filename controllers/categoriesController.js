@@ -19,6 +19,9 @@ const categoriesController = {
     },
     update: (req, res) => {
         res.send(`Actually editing the category in the database`)
+    },
+    delete: (req, res) => {
+        res.send(`Actually delete one of the categories`)
     }
 }
 
