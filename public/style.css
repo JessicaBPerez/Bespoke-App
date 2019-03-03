@@ -1,3 +1,117 @@
-h1 {
-    font-size: 8vw;
+h4 {
+    font-size: 3.5vw;
+    font-family: "playfair display";
 }
+
+.navbar {
+    width: 100%;
+    background-color: rgb(255, 80, 133);
+    height: 4.5rem;
+    position: relative;
+    z-index: 2;
+}
+
+
+/*  Skills List  */
+
+.summary .about {
+    color: white;
+    padding: 1.1rem 1.25rem;
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    font-family: "Noto Serif";
+    font-size: 1.3rem;
+}
+
+.summary .about:hover {
+    transform: scale(1.1);
+    color: black;
+    background: blue;
+}
+
+.summary .skills {
+    background-color: ;
+    padding: 1.1rem 1.25rem;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Noto Serif";
+    font-size: 1.3rem;
+}
+
+.summary .skills:hover {
+    transform: scale(1.1);
+    color: black;
+    background: blue;
+}
+
+.summary .portfolio {
+    /*background-color: yellow;*/
+    padding: 1.1rem 1.25rem;
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    font-family: "Noto Serif";
+    font-size: 1.3rem;
+}
+
+.summary .portfolio:hover {
+    transform: scale(1.1);
+    color: black;
+    background: blue;
+}
+
+.summary .contact {
+    color: white;
+    background-color: ;
+    padding: 1.1rem 1.25rem;
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    font-family: "Noto Serif";
+    font-size: 1.3rem;
+}
+
+.summary .contact:hover {
+    transform: scale(1.1);
+    color: black;
+    background: blue;
+}
+
+
+/* Aligned Toggler to the Middle */
+
+.navbar-toggler {
+    margin-top: -1rem;
+}
+
+.summary a {
+    font-size: 1rem;
+    padding: 100rem;
+}
+
+.navbar-toggler-icon {
+    color: black;
+}
+
+.collapse .navbar-collapse .bg-dark {
+    background-color: black !important;
+    ;
+}
+
+
+/*Change Background Color of Skills Section in NAV BUT NOT DROPDOWN*/
+
+.summary a {
+    background-color: rgb(255, 80, 133);
+}
+
+
+/* Moved the MAIN PAGE SUMMARY ICONS to the left*/
+
+.summary {
+    margin-left: 3rem;
+}
+
+
+/*  Main Picture and Text  */

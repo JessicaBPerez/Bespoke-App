@@ -25,13 +25,50 @@
 
 <body>
 
-    <header class="banner">
+    {{!-- <header class="banner">
         <div class="container-fluid bg-secondary">
             <a href='/'>
                 <h1 class="text-white">BESPOKE</h1>
             </a>
         </div>
-    </header>
+    </header> --}}
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container">
+
+            <img src="../public/pictures/Lotus.png" width="70" height="70" alt="Lotus Logo"><a class="navbar-brand"
+                style="color: #f6f5f5;" href="/">
+                <h4 class="text-white">BESPOKE</h4>
+            </a>
+
+            <button class="navbar-toggler bg-light" type="button" data-toggle="collapse"
+                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav-fill" id="navbarNavAltMarkup">
+                <div class="navbar-nav summary nav-item">
+                    <a class="nav-item nav-link about" href="" style="color: #ffffff;">Glam<span
+                            class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link skills" href="" style="color: #f6f5f5;">Modern</a>
+                    <a class="nav-item nav-link portfolio" href="" style="color: #f6f5f5;">Rustic</a>
+                    <a class="nav-item nav-link contact" href="" style="color: #f6f5f5;">Traditional</a>
+                    <a class="nav-item nav-link portfolio" href="" style="color: #f6f5f5;">French</a>
+                    <a class="nav-item nav-link contact" href="" style="color: #f6f5f5;">Eclectic</a>
+                </div>
+            </div>
+            <div class="navbar-nav collapse navbar-collapse justify-content-end">
+                {{!-- <ul class="icons">
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="https://www.instagram.com/jessicabperez/" class="fa fa-instagram"></a>
+                    <a href="mailto:jessica@jessica-perez.com"><i class="fa fa-envelope-o"
+                            style="font-size:25.6px"></i></a>
+                </ul> --}}
+            </div>
+    </nav>
+
+
+
+
     {{{ body }}}
 </body>
 
