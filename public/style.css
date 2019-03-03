@@ -153,6 +153,7 @@ section {
 
 .text-info {
     color: #3b99e0!important;
+    font-family: "petit formal script";
 }
 
 .h2,
@@ -337,6 +338,7 @@ h6 {
 
 .w-100 {
     width: 100%!important;
+    /*height: 12rem;*/
 }
 
 .d-block {
@@ -355,7 +357,7 @@ svg {
 }
 
 img {
-    border-style: none;
+    border-style: solid;
 }
 
 
@@ -397,7 +399,6 @@ h4 {
 h1,
 h2,
 h3,
-h4,
 h5,
 h6 {
     margin-bottom: .5rem;
