@@ -6,6 +6,10 @@ const categoriesController = require('../controllers/categoriesController.js')
 //Categories Routes
 router.get('/', categoriesController.index)
 
+router.get('/new', categoriesController.new)
+
+router.post('/', categoriesController.create)
+
 
 //Exports the routers
 module.exports = router
