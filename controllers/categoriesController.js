@@ -3,7 +3,12 @@ const Categories = require('../models/Categories.js')
 
 const categoriesController = {
     index: (req, res) => {
-        res.send(`Show all categories`)
+        Categories.find().then(categories => {
+                res.render('index', {
+                    categories
+                })
+            })
+            //res.send(`Show all categories`)
     },
     new: (req, res) => {
         res.send(`I'm rending a form to create new Categories`)

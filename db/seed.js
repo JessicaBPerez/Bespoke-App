@@ -36,6 +36,7 @@ const eclectic = new Categories({
     description: "Beautiful, feminine, and clean design with shimmering accents at the heart of this style.",
 })
 
+//Removes any duplicate categories and re-seeds
 Categories.remove({})
     //.then(() => Food.remove({}))
     .then(() => Categories.create([glam, modern, rustic, traditional, french, eclectic]))
