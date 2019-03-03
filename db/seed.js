@@ -6,3 +6,9 @@ const glam = new Categories({
     category: "Glam",
     description: "Beautiful, feminine, and clean design with shimmering accents at the heart of this style.",
 })
+
+const modern = new Categories({
+    categoriesImg: "https://www.google.com/imgres?imgurl=http%3A%2F%2Fwww.aprar.net%2F7%2F2015%2F12%2Fminimalist-modern-design-cheap-designs-for-apartments-with-gre-wall-and-white-shelves-on-the-wall-with-grey-seat-beside-glasses-coffee-table-inisde-room.jpg&imgrefurl=http%3A%2F%2Fwww.aprar.net%2Fcheap-designs-for-apartments%2Fminimalist-modern-design-cheap-designs-for-apartments-with-gre-wall-and-white-shelves-on-the-wall-with-grey-seat-beside-glasses-coffee-table-inisde-room%2F&docid=CehIWnMjk2Cg8M&tbnid=n_ZrEp4a3gC1_M%3A&vet=1&w=1608&h=1080&bih=693&biw=1442&ved=2ahUKEwjDnaCuleXgAhVChuAKHTTcASEQxiAoBXoECAEQGQ&iact=c&ictx=1",
+    category: "Modern",
+    description: "Beautiful, feminine, and clean design with shimmering accents at the heart of this style.",
+})
