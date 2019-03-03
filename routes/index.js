@@ -10,6 +10,9 @@ router.get('/new', categoriesController.new)
 
 router.post('/', categoriesController.create)
 
+router.get('/:categoryId', categoriesController.show)
+
+router.get('/:categoryId/edit', categoriesController.edit)
 
 //Exports the routers
 module.exports = router

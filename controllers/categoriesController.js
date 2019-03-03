@@ -10,6 +10,12 @@ const categoriesController = {
     },
     create: (req, res) => {
         res.send(`I'm creating a new category in the database`)
+    },
+    show: (req, res) => {
+        res.send(`Shows a single category- the design`)
+    },
+    edit: (req, res) => {
+        res.send(`I'm editing a single category- design`)
     }
 }
 
