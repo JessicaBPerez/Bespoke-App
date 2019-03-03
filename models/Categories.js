@@ -1,11 +1,11 @@
-// Categories Model
-const mongoose = require('../db/connection.js')
-const Schema = mongoose.Schema
+// // Categories Model
+// const mongoose = require('../db/connection.js')
+// const Schema = mongoose.Schema
 
-const Categories = new Schema({
-    imgLink: String,
-    category: String,
-    categoryItems: [designSchema]
-})
+// const Categories = new Schema({
+//     imgLink: String,
+//     category: String,
+//     categoryItems: [designSchema]
+// })
 
-module.exports = mongoose.model('Categories', Categories)
+// module.exports = mongoose.model('Categories', Categories)
