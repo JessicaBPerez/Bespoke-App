@@ -1,29 +1,28 @@
-{{!-- new --}}
-<div class="block-heading">
-    <h2 class="text-info">Contact Us</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae
-        leo.</p>
-</div>
-
-<form action="/" method="POST">
-    <div class="form-group">
-        <label>Name</label>
-        <input class="form-control" type="text" />
+<section class="clean-block clean-form dark">
+    <div class="container">
+        <div class="block-heading">
+            <h2 class="text-info">Contact Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis
+                vitae leo.</p>
+        </div>
+        <form action="/" method="POST">
+            <div class="form-group">
+                <label for="categoriesImg">New Style Image</label>
+                <input class="form-control" type="text" name="categoriesImg" id="categoriesImg"
+                    value="{{categoriesImg}}" />
+            </div>
+            <div class="form-group">
+                <label for="category">Enter the Category</label>
+                <input class="form-control" type="text" name="category" id="category" />
+            </div>
+            <div class="form-group">
+                <label for="description">Describe this style</label>
+                <textarea class="form-control" type="text" name="description" id="description">
+        </textarea>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary btn-block" type="submit" value="submit">Create your Room!</button>
+            </div>
+        </form>
     </div>
-    <div class="form-group">
-        <label>Subject</label>
-        <input class="form-control" type="text" />
-    </div>
-    <div class="form-group">
-        <label>Email</label>
-        <input class="form-control" type="email" />
-    </div>
-    <div class="form-group">
-        <label>Message</label>
-        <textarea class="form-control">
-
-        </textarea></div>
-    <div class="form-group">
-        <button class="btn btn-primary btn-block" type="submit">Send</button>
-    </div>
-</form>
+</section>
