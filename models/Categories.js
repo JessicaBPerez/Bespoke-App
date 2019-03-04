@@ -6,7 +6,9 @@ const DesignSchema = new Schema({
     collectionPalletImg: String,
     collectionPalletDescription: String,
     storeInfo: [],
-    furnitureImg: String,
+    furnitureImg1: String,
+    furnitureImg2: String,
+    furnitureImg3: String,
     furnitureDescription: String,
 })
 
@@ -14,7 +16,7 @@ const Categories = new Schema({
     categoriesImg: String,
     category: String,
     description: String,
-    //categoryItems: [designSchema]
+    designItems: [DesignSchema]
 })
 
 module.exports = mongoose.model('Categories', Categories)
