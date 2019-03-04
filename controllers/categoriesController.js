@@ -15,7 +15,10 @@ const categoriesController = {
             //res.send(`I'm rending a form to create new Categories`)
     },
     create: (req, res) => {
-        res.send(`I'm creating a new category in the database`)
+        Categories.create(req.body).then(category => {
+                res.redirect('/')
+            })
+            //res.send(`I'm creating a new category in the database`)
     },
     show: (req, res) => {
         res.send(`Shows a single category- the design`)
