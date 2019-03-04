@@ -16,24 +16,24 @@ const modern = new Categories({
 const rustic = new Categories({
     categoriesImg: "http://www.banana-film.com/wp-content/uploads/2018/06/rustic-living-room-ideas-new-38-unique-rustic-home-decorating-ideas-gallery-kitchen-design-of-rustic-living-room-ideas.jpg",
     category: "Rustic",
-    description: "Rustic description here.",
+    description: "Rustic style emphasizes rugged, natural beauty. It embraces nature-inspired textures, simple and earthy colors, and ultimately an unpretentious, organic warmth.",
 })
 
 const traditional = new Categories({
     categoriesImg: "http://www.decorationforhouse.com/wp-content/uploads/2014/07/15-stunning-tuscan-living-room-designs-1.jpg",
     category: "Traditional",
-    description: "Traditional description here.",
+    description: "Traditional design is a timeless go-to style that exudes easy elegance and comfort and is a great route for those who appreciate antiques, classic art, symmetry, and design rich with history.",
 })
 
 const french = new Categories({
     categoriesImg: "https://res.cloudinary.com/monefiles/image/fetch/w_630,h_420,c_fill/http://www.poandpo.com/hs1114/french_interior_design.jpg",
     category: "French",
-    description: "French description here.",
+    description: "Inspired by the stunning homes of Provence, French country design often incorporates ruffles, distressed woodwork, mixed patterns, and both vibrant and subdued hues.",
 })
 const eclectic = new Categories({
     categoriesImg: "https://www.decoraid.com/wp-content/uploads/2018/08/eclectic-interior-design-style.jpg",
     category: "Eclectic",
-    description: "Eclectic description here.",
+    description: "Eclectic is a popular adjective in interior design parlance, meaning a decor that comprises heterogeneous elements — a mixture of textures, time periods, styles, trends, and colors.",
 })
 
 //Removes any duplicate categories and re-seeds
