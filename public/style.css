@@ -649,3 +649,24 @@
             margin-right: 10rem;
         }
     }
+    /*Spaces out stuff in cards*/
+    
+    .info h3 {
+        font-family: "Playfair Display SC";
+        margin-bottom: 3rem;
+    }
+    /*Class for button*/
+    
+    .show {
+        margin-bottom: 3rem;
+    }
+    
+    .summary p {
+        margin-bottom: 3rem;
+        font-family: 'text me one';
+        font-size: 1.2rem;
+    }
+    
+    .product-info {
+        background-color: rgb(240, 240, 240);
+    }
