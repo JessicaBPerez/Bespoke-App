@@ -551,7 +551,8 @@
     input {
         overflow: visible;
     }
+    /*Added space between input box in Create Your Style page */
     
     .block-heading p {
-        margin-bottom: 4rem;
+        margin-bottom: 2.5rem;
     }
