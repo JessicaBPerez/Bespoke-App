@@ -43,7 +43,12 @@ const categoriesController = {
             //res.send(`Actually editing the category in the database`)
     },
     delete: (req, res) => {
-        res.send(`Actually delete one of the categories`)
+
+        Categories.findByIdAndDelete(req.params.categoryId).then(() => {
+                console.log(`Deleted style ${req.params.categoryId}`)
+                res.redirect('/')
+            })
+            //res.send(`Actually delete one of the categories`)
     }
 }
 

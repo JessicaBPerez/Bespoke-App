@@ -4,13 +4,13 @@ const Categories = require("../models/Categories.js");
 const glam = new Categories({
     categoriesImg: "https://secureservercdn.net/ip-ad.mwp2.iad2.secureserver.net/ogu.8d6.godaddywp.com/wp-content/uploads/2018/05/modern-glam-decor-how-to-decorate.jpg",
     category: "Glam",
-    description: "Beautiful, feminine, and clean design with shimmering accents at the heart of this style.",
+    description: "Beautiful, feminine, and clean design with shimmering accents is at the heart of this style.",
 })
 
 const modern = new Categories({
     categoriesImg: "https://www.luxdeco.com/styleguide/wp-content/uploads/2015/02/Luxury-modern-interior-designer-MR-Architecture-and-Decor.jpg",
     category: "Modern",
-    description: "Minimalism, clean straight lines, neutral colors, geometry all encompass the modern aesthetic.",
+    description: "Minimalism, clean straight lines, neutral colors, and geometry all encompass the modern aesthetic.",
 })
 
 const rustic = new Categories({
