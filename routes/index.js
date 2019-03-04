@@ -20,6 +20,7 @@ router.put('/:categoryId', categoriesController.update)
 router.delete('/:categoryId', categoriesController.delete)
 
 //Design Routes
+router.get('/:categoryId/design/:designId', designController.show)
 
 
 //Exports the routers

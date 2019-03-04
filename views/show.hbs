@@ -31,21 +31,28 @@
                             {{!-- <div class="price">
                                 <h3>$300.00</h3>
                             </div> --}}
-                            <button class="btn btn-primary show" type="button"><i class="icon-basket"></i>Add to
-                                Cart</button>
+
                             <div class="summary">
                                 <p>{{category.description}}</p>
                             </div>
-                            <div class="text-center">
-                                <a class="action-btn btn btn-info" href="/{{category.id}}/edit">EDIT</a>
-                                <form class="delete-form" action="/{{category.id}}?_method=DELETE" method="POST">
-                                    <input class="action-btn btn btn-danger" type="submit" value="DELETE">
-                                </form>
-                            </div>
+
+                            ♡
                         </div>
+                        <a class="action-btn btn btn-primary" type="button" href="/{{category.id}}/edit">EDIT</a>
+
                     </div>
+
                 </div>
+                <div class="">
+
+                    <form class="delete-form" action="/{{category.id}}?_method=DELETE" method="POST">
+                        <input class="action-btn btn btn-danger" type="submit" value="DELETE">
+                    </form>
+
+                </div>
+                Hi I'm just going to write a bunch of things
             </div>
+            Hi I'm just going to write a bunch of things
             <div class="product-info">
                 <div>
                     {{!-- <ul class="nav nav-tabs" id="myTab">

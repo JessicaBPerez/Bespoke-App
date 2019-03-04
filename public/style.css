@@ -676,6 +676,10 @@
         color: pink;
         font-size: 1.8rem;
     }
+    
+    .info h3 {
+        margin-top: 3rem;
+    }
     /* Description and Specification Page*/
     /* .clean-block.clean-product .product-info {
         margin-bottom: 50px;
