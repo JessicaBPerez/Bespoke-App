@@ -29,10 +29,18 @@ const categoriesController = {
             //res.send(`Shows a single category- the design`)
     },
     edit: (req, res) => {
-        res.send(`I'm editing a single category- design`)
+        Categories.findById(req.params.categoryId).then(category => {
+                res.render('edit', { category })
+            })
+            //res.send(`I'm editing a single category- design`)
     },
     update: (req, res) => {
-        res.send(`Actually editing the category in the database`)
+        Categories.findByIdAndUpdate(req.params.categoryId, req.body, {
+                new: true
+            }).then(() => {
+                res.redirect(`/${req.params.categoryId}`)
+            })
+            //res.send(`Actually editing the category in the database`)
     },
     delete: (req, res) => {
         res.send(`Actually delete one of the categories`)

@@ -670,3 +670,9 @@
     .product-info {
         background-color: rgb(240, 240, 240);
     }
+    
+    .category-pink {
+        font-family: "petit formal script";
+        color: pink;
+        font-size: 1.8rem;
+    }
