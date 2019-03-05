@@ -3,7 +3,7 @@ const Categories = require("../models/Categories.js");
 
 const glamInfo = {
     category: "Glam",
-    collectionPalletImg: "https://i.pinimg.com/originals/5f/3d/d0/5f3dd0486d82f135c85685d54988e1c6.jpg",
+    collectionPalletImg: "https://cdn.kitchencabinetkings.com/media/siege/kitchen-color-schemes/kitchen-color-schemes_6_all-white.jpg",
     collectionPalletDescription: "Glam pallet description.",
     storeInfo: ["TJ Maxx", "Pier One", "West Elm"],
     furnitureImg1: "https://2.bp.blogspot.com/--56ZCKUTUJU/Wz4scJVZsZI/AAAAAAAAVno/3yQIHuTqO78I_u8NamSMbnYwSw-6-WsVwCLcBGAs/s1600/glam-pink-living-room-ideas.png",
@@ -25,7 +25,7 @@ const modernInfo = {
 
 const rusticInfo = {
     category: "Rustic",
-    collectionPalletImg: "https://cdn.kitchencabinetkings.com/media/siege/kitchen-color-schemes/kitchen-color-schemes_27_white-brown-and-black.jpg",
+    collectionPalletImg: "https://cdn.kitchencabinetkings.com/media/siege/kitchen-color-schemes/kitchen-color-schemes_11_pink-and-white.jpg",
     collectionPalletDescription: "rustic pallet description",
     storeInfo: ["Kirkalnds", "Rustic Trades Furniture", "Joss and Main"],
     furnitureImg1: "https://i2.wp.com/www.remodelaholic.com/wp-content/uploads/2015/08/OB-Rustic-Glam.jpg",
