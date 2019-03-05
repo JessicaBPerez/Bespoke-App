@@ -593,3 +593,9 @@
     .category-design h3 {
         font-family: "playfair display sc";
     }
+    
+    .card-flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }

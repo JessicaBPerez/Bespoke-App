@@ -1,14 +1,15 @@
 {{!-- index --}}
 <section class="clean-block about-us">
 
-    <div class="container">
-        <div class="block-heading">
-            <h2 class="text-info">If you can <span class="design">dream</span> it, design it</h2>
-            <p>Don't see what you like? Add your own!</p>
-            <a class="btn btn-primary main" href="/new">+ Add New Style!</a>
-        </div>
+    {{!-- <div class="container"> --}}
+    <div class="block-heading">
+        <h2 class="text-info">If you can <span class="design">dream</span> it, design it</h2>
+        <p>Don't see what you like? Add your own!</p>
+        <a class="btn btn-primary main" href="/new">+ Add New Style!</a>
+    </div>
+    <div class="flex-container" style="width: 100%; display: flex; flex-wrap: wrap; justify-content: space-around;">
         {{#each categories}}
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" style="width: 500px;">
             <div class="col-sm-6 col-lg-4">
                 <div class="card clean-card text-center">
                     <img class="card-img-top w-100 d-block" src="{{categoriesImg}}">
@@ -19,17 +20,53 @@
                         <p class="card-text">{{description}}</p>
                         <div class="icons">
                             <a href="#">Link or something</a>
-
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </div>
         {{/each}}
     </div>
+    {{!-- </div> --}}
 
+</section>
+
+
+
+
+
+<section class="flex-container card-flex">
+    {{#each categories}}
+    <div class="row justify-content-center" style="width: 500px;">
+        <div class="col-sm-6 col-lg-4">
+            <div class="card clean-card text-center">
+                <img class="card-img-top w-100 d-block" src="{{categoriesImg}}">
+                <div class="card-body info">
+                    <h4 class="card-title">
+                        <a href="/{{id}}">{{category}}</a>
+                    </h4>
+                    <p class="card-text">{{description}}</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+
+</section>
+
+
+
+
+
+<section class="flex-container card-flex">
+    {{#each categories}}
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="{{categoriesImg}}" alt="Styles Pictures">
+        <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+        </div>
+    </div>
+    {{/each}}
 </section>

@@ -28,7 +28,7 @@ const rusticInfo = {
     collectionPalletImg: "https://cdn.kitchencabinetkings.com/media/siege/kitchen-color-schemes/kitchen-color-schemes_11_pink-and-white.jpg",
     collectionPalletDescription: "rustic pallet description",
     storeInfo: ["Kirkalnds", "Rustic Trades Furniture", "Joss and Main"],
-    furnitureImg1: "https://i2.wp.com/trendehouse.com/wp-content/uploads/2019/01/The-Best-Rustic-Interior-Design-Ideas-To-Bring-Unique-Look-13.jpg",
+    furnitureImg1: "https://i0.wp.com/trendehouse.com/wp-content/uploads/2019/01/The-Best-Rustic-Interior-Design-Ideas-To-Bring-Unique-Look-03.jpg",
     furnitureImg2: "https://i2.wp.com/www.remodelaholic.com/wp-content/uploads/2015/08/rustic-glam-kitchen-island.jpg",
     furnitureImg3: "https://i2.wp.com/www.remodelaholic.com/wp-content/uploads/2015/08/rustic-glam-bathroom.jpg",
     furnitureDescription: "Rustic furniture info.",
