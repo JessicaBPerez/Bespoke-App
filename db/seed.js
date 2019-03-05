@@ -8,7 +8,7 @@ const glamInfo = {
     storeInfo: ["TJ Maxx", "Pier One", "West Elm"],
     furnitureImg1: "https://2.bp.blogspot.com/--56ZCKUTUJU/Wz4scJVZsZI/AAAAAAAAVno/3yQIHuTqO78I_u8NamSMbnYwSw-6-WsVwCLcBGAs/s1600/glam-pink-living-room-ideas.png",
     furnitureImg2: "https://i.pinimg.com/564x/d3/8e/36/d38e3633aa8b0898d1a36d1fcbbc8129.jpg",
-    furnitureImg2: "https://i.pinimg.com/564x/e9/fa/52/e9fa52ac7cb5184d884f547749d7d10b.jpg",
+    furnitureImg3: "https://i.pinimg.com/564x/e9/fa/52/e9fa52ac7cb5184d884f547749d7d10b.jpg",
     furnitureDescription: "Furniture description.",
 }
 
@@ -19,7 +19,7 @@ const modernInfo = {
     storeInfo: ["Room and Board", "Direct Furniture Outlet", "Switch Modern"],
     furnitureImg1: "https://i0.wp.com/decoratrend.com/wp-content/uploads/2018/07/Modern-Glam-Living-Room-Decorating-Ideas-08.jpg",
     furnitureImg2: "https://i1.wp.com/trendehouse.com/wp-content/uploads/2018/12/Stunning-Modern-House-Design-Interior-Ideas-10.jpg",
-    furnitureImg2: "https://i1.wp.com/trendehouse.com/wp-content/uploads/2018/12/Stunning-Modern-House-Design-Interior-Ideas-37.jpg",
+    furnitureImg3: "https://i1.wp.com/trendehouse.com/wp-content/uploads/2018/12/Stunning-Modern-House-Design-Interior-Ideas-37.jpg",
     furnitureDescription: "Modern furniture description.",
 }
 
@@ -30,7 +30,7 @@ const rusticInfo = {
     storeInfo: ["Kirkalnds", "Rustic Trades Furniture", "Joss and Main"],
     furnitureImg1: "https://i2.wp.com/www.remodelaholic.com/wp-content/uploads/2015/08/OB-Rustic-Glam.jpg",
     furnitureImg2: "https://i2.wp.com/www.remodelaholic.com/wp-content/uploads/2015/08/rustic-glam-kitchen-island.jpg",
-    furnitureImg2: "https://i2.wp.com/www.remodelaholic.com/wp-content/uploads/2015/08/rustic-glam-bathroom.jpg",
+    furnitureImg3: "https://i2.wp.com/www.remodelaholic.com/wp-content/uploads/2015/08/rustic-glam-bathroom.jpg",
     furnitureDescription: "Rustic furniture info.",
 }
 
@@ -41,7 +41,7 @@ const traditionalInfo = {
     storeInfo: ["Ashley Home Furniture", "Birch Lane", "Ethan Allen"],
     furnitureImg1: "https://i0.wp.com/decoratrend.com/wp-content/uploads/2018/07/Modern-Glam-Living-Room-Decorating-Ideas-17.jpg",
     furnitureImg2: "https://i.pinimg.com/564x/f8/60/78/f860781d161a773e3e2a68ac42264198.jpg",
-    furnitureImg2: "https://homedesignlover.com/wp-content/uploads/2014/11/16-Newark-Klima.jpg",
+    furnitureImg3: "https://homedesignlover.com/wp-content/uploads/2014/11/16-Newark-Klima.jpg",
     furnitureDescription: "Traditional furniture info.",
 }
 
@@ -52,7 +52,7 @@ const frenchInfo = {
     storeInfo: ["Joss and Main", "Pier One", "Serena and Lily"],
     furnitureImg1: "http://roomary.info/wp-content/uploads/2018/07/Marvelous-And-Luxury-Living-Room-Decoration-21.jpg",
     furnitureImg2: "http://roomary.info/wp-content/uploads/2018/07/Marvelous-And-Luxury-Living-Room-Decoration-29.jpg",
-    furnitureImg2: "http://www.nativeasthma.org/ldk_cdn/el/elegant-living-room-ideas-fotolip-rich-image-and-wallpaper_inspired-living-room.jpg",
+    furnitureImg3: "http://www.nativeasthma.org/ldk_cdn/el/elegant-living-room-ideas-fotolip-rich-image-and-wallpaper_inspired-living-room.jpg",
     furnitureDescription: "French furniture info.",
 }
 
@@ -63,7 +63,7 @@ const eclecticInfo = {
     storeInfo: ["Rejuvenation", "Zin Home", "Houzz"],
     furnitureImg1: "https://i2.wp.com/decoratrend.com/wp-content/uploads/2018/07/Modern-Glam-Living-Room-Decorating-Ideas-13.jpg",
     furnitureImg2: "https://i2.wp.com/decoratrend.com/wp-content/uploads/2018/07/Modern-Glam-Living-Room-Decorating-Ideas-33.jpg?",
-    furnitureImg2: "https://www.jonathanadler.com/on/demandware.static/-/Sites-catalog-master/default/dw0f26d47d/hi-res/ushi-res/Web_FA16_HainesEmerald_TurnerVitrine_ElectrumSconce.jpg",
+    furnitureImg3: "https://www.jonathanadler.com/on/demandware.static/-/Sites-catalog-master/default/dw0f26d47d/hi-res/ushi-res/Web_FA16_HainesEmerald_TurnerVitrine_ElectrumSconce.jpg",
     furnitureDescription: "Eclectic furniture info.",
 }
 
