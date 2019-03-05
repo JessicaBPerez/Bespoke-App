@@ -3,6 +3,7 @@ const mongoose = require('../db/connection.js')
 const Schema = mongoose.Schema
 
 const DesignSchema = new Schema({
+    category: String,
     collectionPalletImg: String,
     collectionPalletDescription: String,
     storeInfo: [],

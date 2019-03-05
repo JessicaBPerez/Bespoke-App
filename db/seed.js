@@ -2,6 +2,7 @@ const mongoose = require("./connection.js");
 const Categories = require("../models/Categories.js");
 
 const glamInfo = {
+    category: "Glam",
     collectionPalletImg: "https://i.pinimg.com/originals/5f/3d/d0/5f3dd0486d82f135c85685d54988e1c6.jpg",
     collectionPalletDescription: "Glam pallet description.",
     storeInfo: ["TJ Maxx", "Pier One", "West Elm"],
@@ -12,6 +13,7 @@ const glamInfo = {
 }
 
 const modernInfo = {
+    category: "Modern",
     collectionPalletImg: "https://cdn.kitchencabinetkings.com/media/siege/kitchen-color-schemes/kitchen-color-schemes_30_all-black.jpg",
     collectionPalletDescription: "Modern pallet description",
     storeInfo: ["Room and Board", "Direct Furniture Outlet", "Switch Modern"],
@@ -22,6 +24,7 @@ const modernInfo = {
 }
 
 const rusticInfo = {
+    category: "Rustic",
     collectionPalletImg: "https://cdn.kitchencabinetkings.com/media/siege/kitchen-color-schemes/kitchen-color-schemes_27_white-brown-and-black.jpg",
     collectionPalletDescription: "rustic pallet description",
     storeInfo: ["Kirkalnds", "Rustic Trades Furniture", "Joss and Main"],
@@ -32,6 +35,7 @@ const rusticInfo = {
 }
 
 const traditionalInfo = {
+    category: "Traditonal",
     collectionPalletImg: "https://cdn.kitchencabinetkings.com/media/siege/kitchen-color-schemes/kitchen-color-schemes_24_green-and-brown.jpg",
     collectionPalletDescription: "traditional pallet description",
     storeInfo: ["Ashley Home Furniture", "Birch Lane", "Ethan Allen"],
@@ -42,6 +46,7 @@ const traditionalInfo = {
 }
 
 const frenchInfo = {
+    category: "French",
     collectionPalletImg: "https://cdn.kitchencabinetkings.com/media/siege/kitchen-color-schemes/kitchen-color-schemes_6_all-white.jpg",
     collectionPalletDescription: "french pallet description",
     storeInfo: ["Joss and Main", "Pier One", "Serena and Lily"],
@@ -52,6 +57,7 @@ const frenchInfo = {
 }
 
 const eclecticInfo = {
+    category: "Eclectic",
     collectionPalletImg: "https://cdn.kitchencabinetkings.com/media/siege/kitchen-color-schemes/kitchen-color-schemes_7_blue-and-orange.jpg",
     collectionPalletDescription: "Eclectic pallet description",
     storeInfo: ["Rejuvenation", "Zin Home", "Houzz"],
