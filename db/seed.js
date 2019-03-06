@@ -39,9 +39,9 @@ const traditionalInfo = {
     collectionPalletImg: "https://cdn.kitchencabinetkings.com/media/siege/kitchen-color-schemes/kitchen-color-schemes_24_green-and-brown.jpg",
     collectionPalletDescription: "traditional pallet description",
     storeInfo: ["Ashley Home Furniture", "Birch Lane", "Ethan Allen"],
-    furnitureImg1: "https://i0.wp.com/decoratrend.com/wp-content/uploads/2018/07/Modern-Glam-Living-Room-Decorating-Ideas-17.jpg",
-    furnitureImg2: "https://i.pinimg.com/564x/f8/60/78/f860781d161a773e3e2a68ac42264198.jpg",
-    furnitureImg3: "https://homedesignlover.com/wp-content/uploads/2014/11/16-Newark-Klima.jpg",
+    furnitureImg1: "https://i.pinimg.com/564x/dd/79/ce/dd79ce32befb05f1045347ac739c83d2.jpg",
+    furnitureImg2: "https://i.pinimg.com/564x/f0/45/ae/f045ae06851b6803890d76d63ae22150.jpg",
+    furnitureImg3: "https://i.pinimg.com/564x/fb/98/f2/fb98f2c7121135fb69a987f26f29a2df.jpg",
     furnitureDescription: "Traditional furniture info.",
 }
 
@@ -92,7 +92,7 @@ const rustic = new Categories({
 })
 
 const traditional = new Categories({
-    categoriesImg: "http://www.decorationforhouse.com/wp-content/uploads/2014/07/15-stunning-tuscan-living-room-designs-1.jpg",
+    categoriesImg: "https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_1400/https://www.decorsnob.com/wp-content/uploads/Dreena-Collection-3pc-Set-Sofa-Loveseat-Chair-2.jpg",
     category: "Traditional",
     description: "Traditional design is a timeless go-to style that exudes easy elegance and comfort and is a great route for those who appreciate antiques, classic art, symmetry, and design rich with history.",
     designItems: [traditionalInfo]
