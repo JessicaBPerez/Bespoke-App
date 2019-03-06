@@ -1,13 +1,15 @@
 const mongoose = require("./connection.js");
 const { Categories } = require("../models/Categories.js");
 const { Design } = require('../models/Categories')
+const { Flair } = require('../models/Categories.js')
 
 const princessRoom = new Flair({
     category: "Princess Room",
-    flairImg: "",
-    flairDescritpion: "",
-    storeInfo: [],
-
+    flairImg: "https://i.pinimg.com/564x/14/7e/cf/147ecf48085257fe273aec901cd3085a.jpg",
+    flairDescription: "This room is fit for a princess!",
+    storeInfo: ["Restoration Hardware", "Pottery Barn Kids", "West Elm"],
+    flairFurnitureImg: "https://media.rhbabyandchild.com/is/image/rhbcis/rhbc_prod373116_av6?$PD$&wid=650",
+    flairFurnitureDescription: " One of a kind room fit for a baby princess."
 })
 
 
@@ -20,6 +22,7 @@ const glamInfo = new Design({
     furnitureImg2: "https://i.pinimg.com/564x/f1/fe/f8/f1fef822c95649c29f21e76572a95d98.jpg",
     furnitureImg3: "https://i.pinimg.com/564x/e9/fa/52/e9fa52ac7cb5184d884f547749d7d10b.jpg",
     furnitureDescription: "Furniture description.",
+    glamFlair: [princessRoom]
 })
 
 const modernInfo = new Design({
@@ -126,6 +129,7 @@ Categories.remove({})
     //.then(() => Food.remove({}))
     .then(() => Categories.create([glam, modern, rustic, traditional, french, eclectic]))
     .then(() => Design.create([glamInfo, modernInfo, rusticInfo, traditionalInfo, frenchInfo, eclecticInfo]))
+    .then(() => Flair.create([princessRoom]))
     //.then(() => Food.insertMany([pizza, injera, padThai, fishTaco]))
     .then(() => {
         console.log("seeded successfully");

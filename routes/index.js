@@ -3,6 +3,7 @@ const express = require('express')
 const router = express.Router()
 const categoriesController = require('../controllers/categoriesController.js')
 const designController = require('../controllers/designController.js')
+const flairController = require('../controllers/flairController.js')
 
 //Categories Routes
 router.get('/', categoriesController.index)
@@ -28,6 +29,9 @@ router.get('/:categoryId/design/:designId', designController.show)
 
 // router.post('/:categoryId/design', designController.create)
 
+
+//Flair Routes
+router.get('/:categoryId/design/:designId/flair', flairController.index)
 
 //Exports the routers
 module.exports = router

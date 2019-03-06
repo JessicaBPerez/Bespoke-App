@@ -7,7 +7,7 @@ const Flair = new Schema({
     flairImg: String,
     flairDescription: String,
     storeInfo: Array,
-    flairFurniture: String,
+    flairFurnitureImg: String,
     flairFurnitureDescription: String
 })
 
@@ -33,5 +33,5 @@ const Categories = new Schema({
 module.exports = {
     Categories: mongoose.model('Categories', Categories),
     Design: mongoose.model('Design', Design),
-    Flair: mongoose.model('Flair', Flair)
+    Flair: mongoose.model('Flair', Flair),
 }
