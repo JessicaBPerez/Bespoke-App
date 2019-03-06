@@ -52,7 +52,7 @@ const frenchInfo = {
     storeInfo: ["Joss and Main", "Pier One", "Serena and Lily"],
     furnitureImg1: "http://roomary.info/wp-content/uploads/2018/07/Marvelous-And-Luxury-Living-Room-Decoration-21.jpg",
     furnitureImg2: "http://roomary.info/wp-content/uploads/2018/07/Marvelous-And-Luxury-Living-Room-Decoration-29.jpg",
-    furnitureImg3: "http://www.nativeasthma.org/ldk_cdn/el/elegant-living-room-ideas-fotolip-rich-image-and-wallpaper_inspired-living-room.jpg",
+    furnitureImg3: "https://i.pinimg.com/564x/51/46/28/51462878e8c4263db87dd86d4174a87a.jpg",
     furnitureDescription: "French furniture info.",
 }
 
