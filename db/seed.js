@@ -2,6 +2,15 @@ const mongoose = require("./connection.js");
 const { Categories } = require("../models/Categories.js");
 const { Design } = require('../models/Categories')
 
+const princessRoom = new Flair({
+    category: "Princess Room",
+    flairImg: "",
+    flairDescritpion: "",
+    storeInfo: [],
+
+})
+
+
 const glamInfo = new Design({
     category: "Glam",
     collectionPalletImg: "https://cdn.kitchencabinetkings.com/media/siege/kitchen-color-schemes/kitchen-color-schemes_6_all-white.jpg",

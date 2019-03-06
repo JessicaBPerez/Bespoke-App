@@ -2,6 +2,15 @@
 const mongoose = require('../db/connection.js')
 const Schema = mongoose.Schema
 
+const Flair = new Schema({
+    category: String,
+    flairImg: String,
+    flairDescription: String,
+    storeInfo: Array,
+    flairFurniture: String,
+    flairFurnitureDescription: String
+})
+
 const Design = new Schema({
     category: String,
     collectionPalletImg: String,
@@ -23,5 +32,6 @@ const Categories = new Schema({
 
 module.exports = {
     Categories: mongoose.model('Categories', Categories),
-    Design: mongoose.model('Design', Design)
+    Design: mongoose.model('Design', Design),
+    Flair: mongoose.model('Flair', Flair)
 }
