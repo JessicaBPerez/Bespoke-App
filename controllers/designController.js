@@ -12,9 +12,23 @@ const designController = {
         })
     },
     new: (req, res) => {
-        res.send(`Hey, this is the edit form page for your Design Pallet`)
-            //res.render('/:categoryId/design/:designId/new')
-    }
+        let { categoryId, designId } = req.params
+
+        Categories.findById(categoryId).then(category => {
+                let designItem = category.designItems.id(designId)
+                console.log(designItem)
+                res.render('designs/new', { designItem, categoryId })
+            })
+            // let designItem = category.designItems.id(designId)
+            // console.log(designItem)
+            // res.render('designs/new', { designItem, categoryId })
+            //res.send(`Hey, this is the edit form page for your Design Pallet`)
+            // res.render('/designId/new', {
+            //         designItem: req.params.designItem
+
+        //     })
+        //res.render('/:categoryId/design/:designId/new')
+    },
 }
 
 module.exports = designController

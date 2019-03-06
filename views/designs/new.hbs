@@ -1,0 +1,28 @@
+<section class="clean-block clean-form dark">
+    <div class="container">
+        <div class="block-heading">
+            <h2 class="text-info">Create Your Design</h2>
+            <p>Take the first step towards designing your perfect home by entering the styles and decor that you ♡</p>
+        </div>
+        <form action="/:categoryId/design/:designId" method="POST">
+            <div class="form-group">
+                <label for="designItem.collectionPalletImg">Style Link</label>
+                <input class="form-control" type="text" name="designItem.collectionPalletImg"
+                    id="designItem.collectionPalletImg" value="{{designItem.collectionPalletImg}}" />
+            </div>
+            <div class="form-group">
+                <label for="designItem.category">Category</label>
+                <input class="form-control" type="text" name="designItem.category" id="designItem.category" />
+            </div>
+            <div class="form-group">
+                <label for="designItem.collectionPalletDescription">Describe The Style</label>
+                <textarea class="form-control" type="text" name="designItem.collectionPalletDescription"
+                    id="designItem.collectionPalletDescription">
+        </textarea>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary btn-block" type="submit" value="submit">Create your Room!</button>
+            </div>
+        </form>
+    </div>
+</section>
