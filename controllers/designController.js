@@ -10,6 +10,10 @@ const designController = {
             console.log(designItem)
             res.render('designs/show', { designItem, categoryId })
         })
+    },
+    new: (req, res) => {
+        res.send(`Hey, this is the edit form page for your Design Pallet`)
+            //res.render('/:categoryId/design/:designId/new')
     }
 }
 

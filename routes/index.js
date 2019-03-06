@@ -22,6 +22,8 @@ router.delete('/:categoryId', categoriesController.delete)
 //Design Routes
 router.get('/:categoryId/design/:designId', designController.show)
 
+router.get('/:categoryId/design/:designId/new', designController.new)
+
 
 //Exports the routers
 module.exports = router
