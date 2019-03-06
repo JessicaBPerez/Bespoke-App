@@ -1,7 +1,8 @@
 const mongoose = require("./connection.js");
-const Categories = require("../models/Categories.js");
+const { Categories } = require("../models/Categories.js");
+const { Design } = require('../models/Categories')
 
-const glamInfo = {
+const glamInfo = new Design({
     category: "Glam",
     collectionPalletImg: "https://cdn.kitchencabinetkings.com/media/siege/kitchen-color-schemes/kitchen-color-schemes_6_all-white.jpg",
     collectionPalletDescription: "Glam pallet description.",
@@ -10,9 +11,9 @@ const glamInfo = {
     furnitureImg2: "https://i.pinimg.com/564x/f1/fe/f8/f1fef822c95649c29f21e76572a95d98.jpg",
     furnitureImg3: "https://i.pinimg.com/564x/e9/fa/52/e9fa52ac7cb5184d884f547749d7d10b.jpg",
     furnitureDescription: "Furniture description.",
-}
+})
 
-const modernInfo = {
+const modernInfo = new Design({
     category: "Modern",
     collectionPalletImg: "https://cdn.kitchencabinetkings.com/media/siege/kitchen-color-schemes/kitchen-color-schemes_30_all-black.jpg",
     collectionPalletDescription: "Modern pallet description",
@@ -21,9 +22,9 @@ const modernInfo = {
     furnitureImg2: "https://i1.wp.com/trendehouse.com/wp-content/uploads/2018/12/Stunning-Modern-House-Design-Interior-Ideas-10.jpg",
     furnitureImg3: "https://i1.wp.com/trendehouse.com/wp-content/uploads/2018/12/Stunning-Modern-House-Design-Interior-Ideas-37.jpg",
     furnitureDescription: "Modern furniture description.",
-}
+})
 
-const rusticInfo = {
+const rusticInfo = new Design({
     category: "Rustic",
     collectionPalletImg: "https://cdn.kitchencabinetkings.com/media/siege/kitchen-color-schemes/kitchen-color-schemes_11_pink-and-white.jpg",
     collectionPalletDescription: "rustic pallet description",
@@ -32,9 +33,9 @@ const rusticInfo = {
     furnitureImg2: "https://i2.wp.com/www.remodelaholic.com/wp-content/uploads/2015/08/rustic-glam-kitchen-island.jpg",
     furnitureImg3: "https://i2.wp.com/www.remodelaholic.com/wp-content/uploads/2015/08/rustic-glam-bathroom.jpg",
     furnitureDescription: "Rustic furniture info.",
-}
+})
 
-const traditionalInfo = {
+const traditionalInfo = new Design({
     category: "Traditonal",
     collectionPalletImg: "https://cdn.kitchencabinetkings.com/media/siege/kitchen-color-schemes/kitchen-color-schemes_24_green-and-brown.jpg",
     collectionPalletDescription: "traditional pallet description",
@@ -43,9 +44,9 @@ const traditionalInfo = {
     furnitureImg2: "https://i.pinimg.com/564x/f0/45/ae/f045ae06851b6803890d76d63ae22150.jpg",
     furnitureImg3: "https://i.pinimg.com/564x/fb/98/f2/fb98f2c7121135fb69a987f26f29a2df.jpg",
     furnitureDescription: "Traditional furniture info.",
-}
+})
 
-const frenchInfo = {
+const frenchInfo = new Design({
     category: "French",
     collectionPalletImg: "https://cdn.kitchencabinetkings.com/media/siege/kitchen-color-schemes/kitchen-color-schemes_6_all-white.jpg",
     collectionPalletDescription: "french pallet description",
@@ -54,9 +55,9 @@ const frenchInfo = {
     furnitureImg2: "http://roomary.info/wp-content/uploads/2018/07/Marvelous-And-Luxury-Living-Room-Decoration-29.jpg",
     furnitureImg3: "https://i.pinimg.com/564x/51/46/28/51462878e8c4263db87dd86d4174a87a.jpg",
     furnitureDescription: "French furniture info.",
-}
+})
 
-const eclecticInfo = {
+const eclecticInfo = new Design({
     category: "Eclectic",
     collectionPalletImg: "https://cdn.kitchencabinetkings.com/media/siege/kitchen-color-schemes/kitchen-color-schemes_7_blue-and-orange.jpg",
     collectionPalletDescription: "Eclectic pallet description",
@@ -65,7 +66,7 @@ const eclecticInfo = {
     furnitureImg2: "https://i2.wp.com/decoratrend.com/wp-content/uploads/2018/07/Modern-Glam-Living-Room-Decorating-Ideas-33.jpg?",
     furnitureImg3: "https://www.jonathanadler.com/on/demandware.static/-/Sites-catalog-master/default/dw0f26d47d/hi-res/ushi-res/Web_FA16_HainesEmerald_TurnerVitrine_ElectrumSconce.jpg",
     furnitureDescription: "Eclectic furniture info.",
-}
+})
 
 
 
@@ -115,6 +116,7 @@ const eclectic = new Categories({
 Categories.remove({})
     //.then(() => Food.remove({}))
     .then(() => Categories.create([glam, modern, rustic, traditional, french, eclectic]))
+    .then(() => Design.create([glamInfo, modernInfo, rusticInfo, traditionalInfo, frenchInfo, eclecticInfo]))
     //.then(() => Food.insertMany([pizza, injera, padThai, fishTaco]))
     .then(() => {
         console.log("seeded successfully");

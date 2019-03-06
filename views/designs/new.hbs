@@ -1,12 +1,12 @@
 <section class="clean-block clean-form dark">
     <div class="container">
         <div class="block-heading">
-            <h2 class="text-info">Create Your Design</h2>
-            <p>Take the first step towards designing your perfect home by entering the styles and decor that you ♡</p>
+            <h2 class="text-info">Add More Flair</h2>
+            <p>Add more color schemes, room inspiration, and descriptions to further personalize your style! ♡</p>
         </div>
-        <form action="/:categoryId/design/:designId" method="POST">
+        <form action="/{{categoryId}}/design" method="POST">
             <div class="form-group">
-                <label for="designItem.collectionPalletImg">Style Link</label>
+                <label for="designItem.collectionPalletImg">Color Pallet Link</label>
                 <input class="form-control" type="text" name="designItem.collectionPalletImg"
                     id="designItem.collectionPalletImg" value="{{designItem.collectionPalletImg}}" />
             </div>
@@ -15,10 +15,25 @@
                 <input class="form-control" type="text" name="designItem.category" id="designItem.category" />
             </div>
             <div class="form-group">
-                <label for="designItem.collectionPalletDescription">Describe The Style</label>
+                <label for="designItem.collectionPalletDescription">Color Pallet Description</label>
                 <textarea class="form-control" type="text" name="designItem.collectionPalletDescription"
                     id="designItem.collectionPalletDescription">
-        </textarea>
+                 </textarea>
+            </div>
+            <div class="form-group">
+                <label for="designItem.furnitureImg1">Furniture Inspo Link</label>
+                <input class="form-control" type="text" name="designItem.furnitureImg1" id="designItem.furnitureImg1"
+                    value="{{designItem.furnitureImg1}}" />
+            </div>
+            <div class="form-group">
+                <label for="designItem.furnitureImg2">Furniture Inspo Link</label>
+                <input class="form-control" type="text" name="designItem.furnitureImg2" id="designItem.furnitureImg2"
+                    value="{{designItem.furnitureImg2}}" />
+            </div>
+            <div class="form-group">
+                <label for="designItem.furnitureImg3">Furniture Inspo Link</label>
+                <input class="form-control" type="text" name="designItem.furnitureImg3" id="designItem.furnitureImg3"
+                    value="{{designItem.furnitureImg3}}" />
             </div>
             <div class="form-group">
                 <button class="btn btn-primary btn-block" type="submit" value="submit">Create your Room!</button>

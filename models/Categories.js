@@ -2,11 +2,11 @@
 const mongoose = require('../db/connection.js')
 const Schema = mongoose.Schema
 
-const DesignSchema = new Schema({
+const Design = new Schema({
     category: String,
     collectionPalletImg: String,
     collectionPalletDescription: String,
-    storeInfo: [],
+    storeInfo: Array,
     furnitureImg1: String,
     furnitureImg2: String,
     furnitureImg3: String,
@@ -17,7 +17,11 @@ const Categories = new Schema({
     categoriesImg: String,
     category: String,
     description: String,
-    designItems: [DesignSchema]
+    designItems: [Design]
 })
 
-module.exports = mongoose.model('Categories', Categories)
+
+module.exports = {
+    Categories: mongoose.model('Categories', Categories),
+    Design: mongoose.model('Design', Design)
+}

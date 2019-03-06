@@ -1,4 +1,4 @@
-const Categories = require('../models/Categories.js')
+const { Categories, Design } = require('../models/Categories.js')
 
 const designController = {
     show: (req, res) => {
@@ -8,26 +8,28 @@ const designController = {
         Categories.findById(categoryId).then(category => {
             let designItem = category.designItems.id(designId)
             console.log(designItem)
-            res.render('designs/show', { designItem, categoryId })
+            res.render('designs/show', { designItem, categoryId, designId })
         })
     },
     new: (req, res) => {
         let { categoryId, designId } = req.params
 
         Categories.findById(categoryId).then(category => {
-                let designItem = category.designItems.id(designId)
-                console.log(designItem)
-                res.render('designs/new', { designItem, categoryId })
+            let designItem = category.designItems.id(designId)
+            console.log(designId)
+            res.render('designs/new', { designItem, categoryId })
+        })
+    },
+    create: (req, res) => {
+        let { categoryId, designId } = req.params
+        Design.create(req.body).then(flair => {
+                res.redirect(`/${categoryId}/design/${flair._id}`)
             })
-            // let designItem = category.designItems.id(designId)
-            // console.log(designItem)
-            // res.render('designs/new', { designItem, categoryId })
-            //res.send(`Hey, this is the edit form page for your Design Pallet`)
-            // res.render('/designId/new', {
-            //         designItem: req.params.designItem
-
-        //     })
-        //res.render('/:categoryId/design/:designId/new')
+            // Categories.findById(categoryId).then(category => {
+            //     let designItem = category.designItems.id(designId)
+            //     console.log(designId)
+            //     res.render('designs/new', { designItem, categoryId })
+            // })
     },
 }
 

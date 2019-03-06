@@ -24,6 +24,8 @@ router.get('/:categoryId/design/:designId', designController.show)
 
 router.get('/:categoryId/design/:designId/new', designController.new)
 
+router.post('/:categoryId/design', designController.create)
+
 
 //Exports the routers
 module.exports = router

@@ -1,5 +1,5 @@
 // Categories Controller
-const Categories = require('../models/Categories.js')
+const { Categories } = require('../models/Categories.js')
 
 const categoriesController = {
     index: (req, res) => {
