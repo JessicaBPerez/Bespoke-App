@@ -33,5 +33,7 @@ router.get('/:categoryId/design/:designId', designController.show)
 //Flair Routes
 router.get('/:categoryId/design/:designId/flair', flairController.index)
 
+router.get('/:categoryId/design/:designId/flair/new', flairController.new)
+
 //Exports the routers
 module.exports = router

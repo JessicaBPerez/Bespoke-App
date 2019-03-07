@@ -599,3 +599,8 @@
         flex-wrap: wrap;
         justify-content: space-around;
     }
+    
+    .flair-name {
+        font-family: "playfair display sc";
+        color: pink;
+    }

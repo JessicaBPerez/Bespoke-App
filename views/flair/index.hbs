@@ -1,12 +1,9 @@
 <section class="clean-block about-us">
-
-    {{!-- <div class="container"> --}}
     <div class="block-heading">
         <h2 class="text-info">Create Your Own <span class="design">Flair</span></h2>
-        <p>Don't see what you like? Add your own!</p>
+        <p>This is a model flair to get you started. Simply enter the design details to display your dream room.</p>
         {{!-- <a class="btn btn-primary main" href="/new">+ Add New Style!</a> --}}
     </div>
-
     <section class="clean-block clean-info dark">
         <div class="">
             <div class="card-product">
@@ -17,7 +14,7 @@
                     <div class="col-md-6 category-design">
                         <h3>{{flairName}}</h3>
                         <div class="getting-started-info">
-                            <p>{{designItem.collectionPalletDescription}}</p>
+                            <p>{{flairDescription}}</p>
                         </div>
                         <a class="btn btn-primary main" href="/{{categoryId}}/design/{{designId}}/flair">+ Add More
                             Flair!</a>
@@ -28,134 +25,41 @@
                         <div class="containe">
                             <div class="block-heading">
                                 <h2 class="text-info">Gallery</h2>
-                                <p>Get design-spiration from these amazing rooms below. Love our rooms? Check to see
-                                    where
-                                    we got inspiration!<br> Want more inspiration? Add your own pictures!</p>
+                                <p>Get design-spiration from these amazing rooms below. Love our rooms? They are part of
+                                    our Bespoke collection. <br>Check to see
+                                    where we got inspiration! Want more inspiration? Add your own pictures!</p>
                             </div>
                             <div class="row">
                                 <div class="col-md-6 col-lg-4 item product-info"><a
                                         href="blob:https://bootstrapstudio.io/ab86f895-ecab-44d8-8570-db7bcdf08aea"
                                         class="lightbox"><img class="img-thumbnail img-fluid image"
-                                            src={{designItem.furnitureImg1}} /></a>
+                                            src={{flairFurnitureImg1}} /></a>
                                     <br>
                                     <br>
                                 </div>
                                 <div class="col-md-6 col-lg-4 item product-info"><a
                                         href="blob:https://bootstrapstudio.io/2fc5dfa2-94ba-4337-9047-b77f64afe8f9"
                                         class="lightbox"><img class="img-thumbnail img-fluid image"
-                                            src={{designItem.furnitureImg2}} /></a>
+                                            src={{flairFurnitureImg2}} /></a>
                                 </div>
                                 <div class="col-md-6 col-lg-4 item product-info"><a
                                         href="blob:https://bootstrapstudio.io/abaee188-e46f-4b16-8736-1875b4a8b444"
                                         class="lightbox"><img class="img-thumbnail img-fluid image"
-                                            src={{designItem.furnitureImg3}} /></a>
+                                            src={{flairFurnitureImg3}} /></a>
                                 </div>
-
                             </div>
                             <div class="block-heading">
                                 <h2 class="text-info">Design Advice</h2>
-                                <p>{{designItem.furnitureDescription}}</p>
-                            </div>
-                            <div class="block-heading">
-                                <h2 class="text-info">Changed Your Mind?</h2>
-                                <p>No probl</p>
+                                <p>{{flairFurnitureDescription}}</p>
+                                <h3 class="flair-name">Where to buy</h3>
+                                <p>{{storeInfo}}</p>
                             </div>
                         </div>
-
                     </section>
                 </main>
                 {{/each}}
             </div>
         </div>
     </section>
-    <div class="flex-container card-flex">
-
-        {{#each flair}}
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="{{flairImg}}" alt="Styles Pictures">
-            <div class="card-body">
-                <p class="card-text">{{flairDescription}}</p>
-            </div>
-        </div>
-        {{/each}}
     </div>
-
-    <section class="clean-block clean-info dark">
-        <div class="">
-            <div class="block-heading">
-                <h2 class="text-info">Create Your Own <span class="design"> Flair</span></h2>
-                <p>The color swatches provide the life of the room, what kind of life do you want to live?</p>
-            </div>
-
-
-
-
-            <div class="card-product">
-                <div class="row align-items-center product-info">
-                    <div class="col-md-6"><img class="img-thumbnail figure-img img-fluid rounded"
-                            src={{designItem.collectionPalletImg}} /></div>
-                    <div class="col-md-6 category-design">
-                        <h3>{{designItem.category}}</h3>
-                        <div class="getting-started-info">
-                            <p>{{designItem.collectionPalletDescription}}</p>
-                        </div>
-                        <a class="btn btn-primary main" href="/{{categoryId}}/design/{{designId}}/flair">+ Add More
-                            Flair!</a>
-                    </div>
-                </div>
-                <main class="page gallery-page">
-                    <section class="clean-block clean-gallery dark">
-                        <div class="containe">
-                            <div class="block-heading">
-                                <h2 class="text-info">Gallery</h2>
-                                <p>Get design-spiration from these amazing rooms below. Love our rooms? Check to see
-                                    where
-                                    we got inspiration!<br> Want more inspiration? Add your own pictures!</p>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 col-lg-4 item product-info"><a
-                                        href="blob:https://bootstrapstudio.io/ab86f895-ecab-44d8-8570-db7bcdf08aea"
-                                        class="lightbox"><img class="img-thumbnail img-fluid image"
-                                            src={{designItem.furnitureImg1}} /></a>
-                                    <br>
-                                    <br>
-                                </div>
-                                <div class="col-md-6 col-lg-4 item product-info"><a
-                                        href="blob:https://bootstrapstudio.io/2fc5dfa2-94ba-4337-9047-b77f64afe8f9"
-                                        class="lightbox"><img class="img-thumbnail img-fluid image"
-                                            src={{designItem.furnitureImg2}} /></a>
-                                </div>
-                                <div class="col-md-6 col-lg-4 item product-info"><a
-                                        href="blob:https://bootstrapstudio.io/abaee188-e46f-4b16-8736-1875b4a8b444"
-                                        class="lightbox"><img class="img-thumbnail img-fluid image"
-                                            src={{designItem.furnitureImg3}} /></a>
-                                </div>
-
-                            </div>
-                            <div class="block-heading">
-                                <h2 class="text-info">Design Advice</h2>
-                                <p>{{designItem.furnitureDescription}}</p>
-                            </div>
-                            <div class="block-heading">
-                                <h2 class="text-info">Changed Your Mind?</h2>
-                                <p>No probl</p>
-                            </div>
-                        </div>
-
-                    </section>
-                </main>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-
-
-
-
-
-
 </section>
