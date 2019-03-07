@@ -9,6 +9,10 @@ const flairController = {
             })
         })
     },
+    new: (req, res) => {
+        //res.send(`Hey Jess, this is the new form!`)
+        res.render('flair/new')
+    }
 }
 
 module.exports = flairController
