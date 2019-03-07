@@ -4,7 +4,7 @@ const flairController = {
     index: (req, res) => {
         //res.send(`Hey, Jess!`)
         Flair.find().then(flair => {
-            res.render('index', {
+            res.render('flair/index', {
                 flair
             })
         })

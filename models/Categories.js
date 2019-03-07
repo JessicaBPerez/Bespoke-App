@@ -3,11 +3,13 @@ const mongoose = require('../db/connection.js')
 const Schema = mongoose.Schema
 
 const Flair = new Schema({
-    category: String,
+    flairName: String,
     flairImg: String,
     flairDescription: String,
     storeInfo: Array,
-    flairFurnitureImg: String,
+    flairFurnitureImg1: String,
+    flairFurnitureImg2: String,
+    flairFurnitureImg3: String,
     flairFurnitureDescription: String
 })
 

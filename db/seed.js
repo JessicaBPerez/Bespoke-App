@@ -4,11 +4,13 @@ const { Design } = require('../models/Categories')
 const { Flair } = require('../models/Categories.js')
 
 const princessRoom = new Flair({
-    category: "Princess Room",
+    flairName: "Princess Room",
     flairImg: "https://i.pinimg.com/564x/14/7e/cf/147ecf48085257fe273aec901cd3085a.jpg",
     flairDescription: "This room is fit for a princess!",
     storeInfo: ["Restoration Hardware", "Pottery Barn Kids", "West Elm"],
-    flairFurnitureImg: "https://media.rhbabyandchild.com/is/image/rhbcis/rhbc_prod373116_av6?$PD$&wid=650",
+    flairFurnitureImg1: "https://i.pinimg.com/564x/53/3f/c9/533fc9c86efa05fde6717e752102dfb2.jpg",
+    flairFurnitureImg2: "https://i.pinimg.com/564x/9d/04/36/9d04363df5cecd51d12e51e7986baad2.jpg",
+    flairFurnitureImg3: "https://i.pinimg.com/564x/03/24/8d/03248ddfbfb3d2382b9dcc388f4c6709.jpg",
     flairFurnitureDescription: " One of a kind room fit for a baby princess."
 })
 
@@ -18,7 +20,7 @@ const glamInfo = new Design({
     collectionPalletImg: "https://cdn.kitchencabinetkings.com/media/siege/kitchen-color-schemes/kitchen-color-schemes_6_all-white.jpg",
     collectionPalletDescription: "Glam pallet description.",
     storeInfo: ["TJ Maxx", "Pier One", "West Elm"],
-    furnitureImg1: "https://i.pinimg.com/564x/6e/72/f9/6e72f98737de0b63987c3d0fef9cf473.jpg",
+    furnitureImg1: "https://i.pinimg.com/564x/b1/25/57/b12557e4d135cb736872b667298ce68a.jpg",
     furnitureImg2: "https://i.pinimg.com/564x/f1/fe/f8/f1fef822c95649c29f21e76572a95d98.jpg",
     furnitureImg3: "https://i.pinimg.com/564x/e9/fa/52/e9fa52ac7cb5184d884f547749d7d10b.jpg",
     furnitureDescription: "Furniture description.",
@@ -129,6 +131,7 @@ Categories.remove({})
     //.then(() => Food.remove({}))
     .then(() => Categories.create([glam, modern, rustic, traditional, french, eclectic]))
     .then(() => Design.create([glamInfo, modernInfo, rusticInfo, traditionalInfo, frenchInfo, eclecticInfo]))
+Flair.remove({})
     .then(() => Flair.create([princessRoom]))
     //.then(() => Food.insertMany([pizza, injera, padThai, fishTaco]))
     .then(() => {
