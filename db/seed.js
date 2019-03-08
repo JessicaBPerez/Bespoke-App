@@ -86,21 +86,21 @@ const eclecticInfo = new Design({
 
 
 const glam = new Categories({
-    categoriesImg: "https://i.pinimg.com/564x/68/89/b4/6889b4780aba519b3ad2417738548240.jpg",
+    categoriesImg: "http://bamstudio.co/wp-content/uploads/2018/04/glam-living-room-ideas-old-glamour-home-decor-home-design-and-idea-old-home-decor-interior-decor-home-rustic-glam-living-room-ideas.jpg",
     category: "Glam",
-    description: "Beautiful, feminine, and clean design with shimmering accents is at the heart of this style.",
+    description: "Beautiful, feminine, and clean design with pastel undertones and soft shimmering accents are at the heart of glam. Perfect for those that value elgance, grace, and sophistication.",
     designItems: [glamInfo]
 })
 
 const modern = new Categories({
     categoriesImg: "https://www.luxdeco.com/styleguide/wp-content/uploads/2015/02/Luxury-modern-interior-designer-MR-Architecture-and-Decor.jpg",
     category: "Modern",
-    description: "Minimalism, clean straight lines, neutral colors, and geometry all encompass the modern aesthetic.",
+    description: "Minimalism, clean straight lines, neutral colors, and geometry all encompass the Modern aesthetic. For those that value simplicity, space, and and ambition.",
     designItems: [modernInfo]
 })
 
 const rustic = new Categories({
-    categoriesImg: "http://www.banana-film.com/wp-content/uploads/2018/06/rustic-living-room-ideas-new-38-unique-rustic-home-decorating-ideas-gallery-kitchen-design-of-rustic-living-room-ideas.jpg",
+    categoriesImg: "http://lemonaidapp.co/wp-content/uploads/2018/02/rustic-bedroom-decor-decorating-ideas-innovative-rustic-bedroom-ideas-rustic-bedrooms-design-ideas-log-homes-modern-rustic-bedroom-decor.jpg",
     category: "Rustic",
     description: "Rustic style emphasizes rugged, natural beauty. It embraces nature-inspired textures, simple and earthy colors, and ultimately an unpretentious, organic warmth.",
     designItems: [rusticInfo]
