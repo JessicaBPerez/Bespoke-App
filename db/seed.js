@@ -57,7 +57,7 @@ const traditionalInfo = new Design({
     furnitureImg1: "https://i.pinimg.com/564x/dd/79/ce/dd79ce32befb05f1045347ac739c83d2.jpg",
     furnitureImg2: "https://i.pinimg.com/564x/f0/45/ae/f045ae06851b6803890d76d63ae22150.jpg",
     furnitureImg3: "https://i.pinimg.com/564x/fb/98/f2/fb98f2c7121135fb69a987f26f29a2df.jpg",
-    furnitureDescription: "Traditional furniture info.",
+    furnitureDescription: "With traditional design, you cannot go wrong with espresso colored furniture. You don't have to limit your furniture to one single color scheme, paisly print, scroll light fixtures, and a hint of marble in our table table pieces would also add that extra flair of unexpected touches to a normally conservative and traditional space.",
 })
 
 const frenchInfo = new Design({
