@@ -6,33 +6,22 @@
                 style? <br> No probem, just press delete and the styles will be removed from your collection. </p>
         </div>
         <div class="block-content card-product">
-            <div class="product-info">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="gallery">
-                            <div class="sp-wrap">
-                                <a><img class="img-fluid mx-auto" src={{category.categoriesImg}}
-                                        alt="category pictures" /></a>
-                            </div>
-                        </div>
+            <div class="row align-items-center product-info">
+                <div class="col-md-6"><img class="img-thumbnail figure-img img-fluid rounded"
+                        src={{category.categoriesImg}} /></div>
+                <div class="col-md-6 category-design">
+                    <h3>{{category.category}}</h3>
+                    <div class="getting-started-info">
+                        <p>{{category.description}}</p>
                     </div>
-                    <div class="col-md-6">
-                        <div class="info">
-                            <h3>{{category.category}}</h3>
-                            <div class="summary">
-                                <p>{{category.description}}</p>
-                            </div>
-
-                            ♡
-                        </div>
-                        <a class="action-btn btn btn-primary" type="button" href="/{{category.id}}/edit">EDIT</a>
+                    {{!-- {{!-- {{!-- <a class="btn btn-primary main" href="/{{categoryId}}/design/{{designId}}/flair">+ Add More --}}
+                    {{!-- Flair!</a>   --}}
+                    <div class="delete-button">
+                        <form class="delete-form" action="/{{category.id}}?_method=DELETE" method="POST">
+                            <input class="action-btn btn btn-danger" type="submit" value="DELETE">
+                            <a class="action-btn btn btn-primary" type="button" href="/{{category.id}}/edit">EDIT</a>
+                        </form>
                     </div>
-                </div>
-                <div class="delete-button">
-
-                    <form class="delete-form" action="/{{category.id}}?_method=DELETE" method="POST">
-                        <input class="action-btn btn btn-danger" type="submit" value="DELETE">
-                    </form>
                 </div>
             </div>
             <div class="block-heading">
@@ -42,7 +31,6 @@
                 <a class="action-btn btn btn-primary " type="button" href="/{{../category._id}}/design/{{_id}}">Get
                     Designs</a>
                 {{/each}}
-
             </div>
             <div class="product-info">
             </div>

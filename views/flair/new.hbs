@@ -5,7 +5,7 @@
             <p>Add more color schemes, room inspiration, and descriptions to further personalize your style! ♡</p>
         </div>
         {{!-- {{!-- {{!-- <form action="/{{categoryId}}/design/{{designId}}/flair" method="POST">  --}}
-        <form action="/{{categoryId}}/design/{{designId}}/flair/{{flairId}}" method="POST">
+        <form action="/{{categoryId}}/design/{{designId}}/flair" method="POST">
             <div class="form-group">
                 <label for="flairImg">Color Pallet Link</label>
                 <input class="form-control" type="text" name="flairImg" id="flairImg" value="{{flairImg}}" />
@@ -33,6 +33,12 @@
                 <label for="flairFurnitureImg3">Furniture Inspo Link</label>
                 <input class="form-control" type="text" name="flairFurnitureImg3" id="flairFurnitureImg3"
                     value="{{flairFurnitureImg3}}" />
+            </div>
+            <div class="form-group">
+                <label for="flairFurnitureDescription">Design Advice / Comments</label>
+                <textarea class="form-control" type="text" name="flairFurnitureDescription"
+                    id="flairFurnitureDescription">
+                </textarea>
             </div>
             <div class="form-group">
                 <label for="storeInfo">Where to Buy</label>

@@ -31,11 +31,21 @@ const flairController = {
     create: (req, res) => {
         Flair.create(req.body).then(flair => {
             //res.redirect(`/${req.params.categoryId}/design/${req.params.designId}/flair`)
-            res.redirect(`/${req.params.categoryId}/design/${req.params.designId}/flair/${req.params.flairId}`)
+            res.redirect(`/${req.params.categoryId}/design/${req.params.designId}/flair`)
         })
     },
     show: (req, res) => {
-        res.send(`Hey, Jess`)
+        //res.send(`Hey, Jess`)
+        let { categoryId, designId, flairId } = req.params
+        Flair.findById(req.params.flairId).then(flair => {
+            // let flairItem = category.flairItem.id(designId)
+            res.render('flair/show', {
+                flair,
+                flairId,
+                designId,
+                categoryId
+            })
+        })
     }
 }
 
