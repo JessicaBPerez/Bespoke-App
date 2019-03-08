@@ -12,11 +12,15 @@ The goal of this project was to utilize our knowledge of the Mongo database, nod
 
 ## Wireframes
 
-<img src= "images/App_MacBook_Screen_Shot.jpg" alt = "Bespoke MacBook Wireframe>
-<img src= "images/APP_iPad_Screen_Shot" alt = "Bespoke iPad Wireframe>
-<img src= "images/APP_Mobile_View" alt = "Bespoke mobile Wireframe>
+<img src= "images/App_MacBook_Screen_Shot.png" alt = "Bespoke MacBook Wireframe>
+<img src= "images/APP_iPad_Screen_Shot.png" alt = "Bespoke iPad Wireframe>
+<img src= "images/APP_Mobile_View.png" alt = "Bespoke mobile Wireframe>
 
 - Link to wireframes: https://trello.com/b/XEue3HLc/full-stack-app
+
+## ERD
+
+<img src= "images/ERD_Chart.png" alt="ERD Chart">
 
 ## Technologies Used
 
