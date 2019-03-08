@@ -6,12 +6,12 @@ const { Flair } = require('../models/Categories.js')
 const princessRoom = new Flair({
     flairName: "Princess Room",
     flairImg: "https://i.pinimg.com/564x/14/7e/cf/147ecf48085257fe273aec901cd3085a.jpg",
-    flairDescription: "This room is fit for a princess!",
+    flairDescription: "Rose painted walls, tee-pee beds, golden or lavendar light displays, and mosaic pillows bring this room together perfectly. This is a beautiful room perfect for a little princess.",
     storeInfo: ["Restoration Hardware", "Pottery Barn Kids", "West Elm"],
     flairFurnitureImg1: "https://i.pinimg.com/564x/53/3f/c9/533fc9c86efa05fde6717e752102dfb2.jpg",
     flairFurnitureImg2: "https://i.pinimg.com/564x/9d/04/36/9d04363df5cecd51d12e51e7986baad2.jpg",
     flairFurnitureImg3: "https://i.pinimg.com/564x/03/24/8d/03248ddfbfb3d2382b9dcc388f4c6709.jpg",
-    flairFurnitureDescription: " Tufted cribs, flower pained walls, One of a kind room fit for a baby princess."
+    flairFurnitureDescription: " You want to incorporate tufted furniture, mosaic vases, white flowers, crown bedding accents, and angel wing frames to truly make this room stand out. Pastel pink pillows would also make the perfect accents to compliment the main furniture pieces. "
 })
 
 
@@ -23,7 +23,7 @@ const glamInfo = new Design({
     furnitureImg1: "https://i.pinimg.com/564x/b1/25/57/b12557e4d135cb736872b667298ce68a.jpg",
     furnitureImg2: "https://i.pinimg.com/564x/f1/fe/f8/f1fef822c95649c29f21e76572a95d98.jpg",
     furnitureImg3: "https://i.pinimg.com/564x/e9/fa/52/e9fa52ac7cb5184d884f547749d7d10b.jpg",
-    furnitureDescription: "Furniture description.",
+    furnitureDescription: "Pink pastel wing frames, white fur carpet, acrylic chairs, mosiac vases, and gold accented furniture perfectly define the glam furniture elements. The glam room wouldn't be complete without a nice Chanel painting with a cream ottoman. Go big and glam with this room, it will turn out beautifully.",
     glamFlair: [princessRoom]
 })
 
@@ -35,7 +35,7 @@ const modernInfo = new Design({
     furnitureImg1: "https://i2.wp.com/trendehouse.com/wp-content/uploads/2018/12/Stunning-Modern-House-Design-Interior-Ideas-18.jpg",
     furnitureImg2: "https://i1.wp.com/trendehouse.com/wp-content/uploads/2018/12/Stunning-Modern-House-Design-Interior-Ideas-10.jpg",
     furnitureImg3: "https://i1.wp.com/trendehouse.com/wp-content/uploads/2018/12/Stunning-Modern-House-Design-Interior-Ideas-37.jpg",
-    furnitureDescription: "Modern furniture description.",
+    furnitureDescription: "Think geometry. Rectangles, triangles, squares, and circles, use these geometric designs to find inspiration for your furniture. Leather accents paired with concrete figures would work really well in a modern home. Light neutral tables are best with dark leather couches, and dark marble tables are best with acrylic seats.",
 })
 
 const rusticInfo = new Design({
@@ -46,7 +46,7 @@ const rusticInfo = new Design({
     furnitureImg1: "https://i0.wp.com/trendehouse.com/wp-content/uploads/2019/01/The-Best-Rustic-Interior-Design-Ideas-To-Bring-Unique-Look-03.jpg",
     furnitureImg2: "https://i2.wp.com/www.remodelaholic.com/wp-content/uploads/2015/08/rustic-glam-kitchen-island.jpg",
     furnitureImg3: "https://i2.wp.com/www.remodelaholic.com/wp-content/uploads/2015/08/rustic-glam-bathroom.jpg",
-    furnitureDescription: "Rustic furniture info.",
+    furnitureDescription: "Think about what defines the rustic aesthetic. Nature, natural light, organic creams, wooden beams, and neutral earthy tones. You want to keep your furniture colors in the same color family as a forest. You want to ensure your tables are oatmeal, accents are light, and you pick pieces that will open your room, not close it off.",
 })
 
 const traditionalInfo = new Design({
@@ -68,18 +68,18 @@ const frenchInfo = new Design({
     furnitureImg1: "http://roomary.info/wp-content/uploads/2018/07/Marvelous-And-Luxury-Living-Room-Decoration-21.jpg",
     furnitureImg2: "http://roomary.info/wp-content/uploads/2018/07/Marvelous-And-Luxury-Living-Room-Decoration-29.jpg",
     furnitureImg3: "https://i.pinimg.com/564x/51/46/28/51462878e8c4263db87dd86d4174a87a.jpg",
-    furnitureDescription: "French furniture info.",
+    furnitureDescription: "Think tufted seats, victorian artifacts, damask print, chandeliers, and fringe pillows are perfect for the French design. Think DaVinci figures, light curtains, and candelabras.",
 })
 
 const eclecticInfo = new Design({
     category: "Eclectic",
     collectionPalletImg: "https://cdn.kitchencabinetkings.com/media/siege/kitchen-color-schemes/kitchen-color-schemes_7_blue-and-orange.jpg",
-    collectionPalletDescription: "Eclectic pallet description",
+    collectionPalletDescription: "Carrot, riverbed, venice blue, yellow, dare to be BOLD and daring for this pallete scheme. Contrast blues with bold yellows, greens with bright purples and sprinkles of orange throughout. Be unafraid of the eccentricity of this pallet, eccentricity is what defines this design.",
     storeInfo: ["Rejuvenation", "Zin Home", "Houzz"],
     furnitureImg1: "https://i2.wp.com/decoratrend.com/wp-content/uploads/2018/07/Modern-Glam-Living-Room-Decorating-Ideas-13.jpg",
     furnitureImg2: "https://i2.wp.com/decoratrend.com/wp-content/uploads/2018/07/Modern-Glam-Living-Room-Decorating-Ideas-33.jpg?",
     furnitureImg3: "https://www.jonathanadler.com/on/demandware.static/-/Sites-catalog-master/default/dw0f26d47d/hi-res/ushi-res/Web_FA16_HainesEmerald_TurnerVitrine_ElectrumSconce.jpg",
-    furnitureDescription: "Eclectic furniture info.",
+    furnitureDescription: "I recommend velvet green seats, gold accent lighting, Andy Warhol paintings, metal spheres, and eccentric statues.",
 })
 
 
