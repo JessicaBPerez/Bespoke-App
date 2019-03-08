@@ -6,7 +6,7 @@
     </div>
     <section class="clean-block clean-info dark">
         <div class="">
-            <div class="card-product">
+            <div class="card-product block-heading">
                 {{#each flair}}
                 <div class="row align-items-center product-info">
                     <div class="col-md-6"><img class="img-thumbnail figure-img img-fluid rounded" src={{flairImg}} />
@@ -16,7 +16,7 @@
                         <div class="getting-started-info">
                             <p>{{flairDescription}}</p>
                         </div>
-                        <a class="btn btn-primary main" href="/{{categoryId}}/design/{{designId}}/flair/new">+ Add
+                        <a class="btn btn-primary main" href="/{{../categoryId}}/design/{{../designId}}/flair/new">+ Add
                             More
                             Flair!</a>
                     </div>
@@ -50,7 +50,7 @@
                                 </div>
                             </div>
                             <div class="block-heading">
-                                <h2 class="text-info">Design Advice</h2>
+                                <h2 class="text-info">Design Advice <span class="design">/</span> Comments</h2>
                                 <p>{{flairFurnitureDescription}}</p>
                                 <h3 class="flair-name">Where to buy</h3>
                                 <p>{{storeInfo}}</p>
@@ -59,6 +59,9 @@
                     </section>
                 </main>
                 {{/each}}
+                <a class="btn btn-primary main" href="/{{categoryId}}/design/{{designId}}/flair/new">+ Add
+                    More
+                    Flair!</a>
             </div>
         </div>
     </section>

@@ -5,7 +5,9 @@ const flairController = {
         //res.send(`Hey, Jess!`)
         Flair.find().then(flair => {
             res.render('flair/index', {
-                flair
+                flair,
+                categoryId: req.params.categoryId,
+                designId: req.params.designId
             })
         })
     },
@@ -19,13 +21,21 @@ const flairController = {
             // Flair.findById(flairId).then(flair => {
             //     let flairItem = flair.flairItem.id(flairId)
             // })
-        res.render('flair/new', { categoryId, designId, flairId })
+        res.render('flair/new', {
+                categoryId,
+                designId,
+                flairId,
+            })
             // })
     },
-    create: (req, params) => {
+    create: (req, res) => {
         Flair.create(req.body).then(flair => {
-            res.redirect('/flair')
+            //res.redirect(`/${req.params.categoryId}/design/${req.params.designId}/flair`)
+            res.redirect(`/${req.params.categoryId}/design/${req.params.designId}/flair/${req.params.flairId}`)
         })
+    },
+    show: (req, res) => {
+        res.send(`Hey, Jess`)
     }
 }
 

@@ -11,7 +11,7 @@ const princessRoom = new Flair({
     flairFurnitureImg1: "https://i.pinimg.com/564x/53/3f/c9/533fc9c86efa05fde6717e752102dfb2.jpg",
     flairFurnitureImg2: "https://i.pinimg.com/564x/9d/04/36/9d04363df5cecd51d12e51e7986baad2.jpg",
     flairFurnitureImg3: "https://i.pinimg.com/564x/03/24/8d/03248ddfbfb3d2382b9dcc388f4c6709.jpg",
-    flairFurnitureDescription: " One of a kind room fit for a baby princess."
+    flairFurnitureDescription: " Tufted cribs, flower pained walls, One of a kind room fit for a baby princess."
 })
 
 
