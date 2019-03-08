@@ -17,8 +17,7 @@
                     <div class="delete-button">
                         <form class="delete-form" action="/{{category.id}}?_method=DELETE" method="POST">
                             <input class="action-btn btn btn-danger" type="submit" value="DELETE">
-                            <a class="action-btn btn btn-primary main" type="button"
-                                href="/{{category.id}}/edit">EDIT</a>
+                            <a class="btn btn-primary main" href="/{{category.id}}/edit">EDIT</a>
                         </form>
                     </div>
                 </div>
@@ -27,8 +26,7 @@
                 <h3 class="text-info text-center">Need More?</h3>
                 <p class="text-center">Click the button below for decor ideas ♡</p>
                 {{#each category.designItems}}
-                <a class="action-btn btn btn-primary " type="button" href="/{{../category._id}}/design/{{_id}}">Get
-                    Designs</a>
+                <a class="btn btn-primary main" href="/{{../category._id}}/design/{{_id}}">Get Designs</a>
                 {{/each}}
             </div>
             <div class="product-info">
