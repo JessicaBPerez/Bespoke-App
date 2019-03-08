@@ -12,10 +12,10 @@ The goal of this project was to utilize our knowledge of the Mongo database, nod
 
 ## Wireframes
 
-<img src= "images/MacBook.png" alt="Bespoke MacBook Wireframe">
 Desktop Version
-<img src= "images/Mobile.png" alt = "Bespoke mobile Wireframe>
+<img src= "images/MacBook.png" alt="Bespoke MacBook Wireframe">
 Mobile Version
+<img src= "images/Mobile.png" alt = "Bespoke mobile Wireframe>
 
 ## ERD
 
