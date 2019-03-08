@@ -39,7 +39,11 @@ router.post('/:categoryId/design/:designId/flair', flairController.create)
 
 router.get('/:categoryId/design/:designId/flair/:flairId', flairController.show)
 
+router.patch('/:categoryId/design/:designId/flair/:flairId', flairController.update)
+
 router.get('/:categoryId/design/:designId/flair/:flairId/edit', flairController.edit)
+
+router.delete('/:categoryId/design/:designId/flair/:flairId/', flairController.delete)
 
 //Exports the routers
 module.exports = router

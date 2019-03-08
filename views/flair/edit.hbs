@@ -3,13 +3,10 @@
         <div class="block-heading">
             <h2 class="text-info">Edit Your Flair</h2>
             <h2 class="category-pink">{{flair.flairName}}</h2>
-            {{!-- Back button is broken --}}
-            <a href="/{{category.id}}/design/{{design.id}}/flair/{{flair._id}}">Back</a>
-
+            <a href="/{{categoryId}}/design/{{designId}}/flair/{{flair._id}}">Back</a>
             <p>Add more color schemes, room inspiration, and descriptions to further personalize your style! ♡</p>
         </div>
-        {{!-- {{!-- {{!-- <form action="/{{categoryId}}/design/{{designId}}/flair" method="POST">  --}}
-        <form action="/{{category.id}}/design/{{design.id}}/flair/{{flair.id}}" method="POST">
+        <form action="/{{categoryId}}/design/{{designId}}/flair/{{flair._id}}?_method=PATCH" method="POST">
             <div class="form-group">
                 <label for="flairImg">Color Pallet Link</label>
                 <input class="form-control" type="text" name="flairImg" id="flairImg" value="{{flairImg}}" />

@@ -2,7 +2,6 @@
     <div class="block-heading">
         <h2 class="text-info">Create Your Own <span class="design">Flair</span></h2>
         <p>This is a model flair to get you started. Simply enter the design details to display your dream room.</p>
-        {{!-- <a class="btn btn-primary main" href="/new">+ Add New Style!</a> --}}
     </div>
     <section class="clean-block clean-info dark">
         <div class="">
@@ -14,14 +13,9 @@
                     <div class="col-md-6 category-design">
                         <h3>{{flairName}}</h3>
                         <div class="getting-started-info">
-                            {{!-- /:categoryId/design/:designId/flair/:flairId --}}
-                            <a
-                                href="/{{../categoryId}}/design/{{../designId}}/flair/{{../flairId}}/">{{flairDescription}}</a>
                             <p>{{flairDescription}}</p>
+                            <a href="/{{../categoryId}}/design/{{../designId}}/flair/{{id}}/">Visit Room</a>
                         </div>
-                        <a class="btn btn-primary main" href="/{{../categoryId}}/design/{{../designId}}/flair/new">+ Add
-                            More
-                            Flair!</a>
                     </div>
                 </div>
                 <main class="page gallery-page">
