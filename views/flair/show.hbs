@@ -1,13 +1,11 @@
 <section class="clean-block about-us">
     <div class="block-heading">
         <h2 class="text-info">Your New <span class="design">Flair</span></h2>
-        <p>Changed your mind about his room? No problem! Just edit, or delete with the buttons below</p>
-        {{!-- <a class="btn btn-primary main" href="/new">+ Add New Style!</a> --}}
+        <p>Changed your mind about his room? No problem! Just edit, or delete with the buttons below ♡</p>
     </div>
     <section class="clean-block clean-info dark">
         <div class="">
             <div class="card-product block-heading">
-
                 <div class="row align-items-center product-info">
                     <div class="col-md-6"><img class="img-thumbnail figure-img img-fluid rounded"
                             src={{flair.flairImg}} />
@@ -17,9 +15,6 @@
                         <div class="getting-started-info">
                             <p>{{flair.flairDescription}}</p>
                         </div>
-                        {{!-- {{!-- {{!-- <a class="btn btn-primary main" href="/{{../categoryId}}/design/{{../designId}}/flair/new">+ Add  
-                            More
-                            Flair!</a> --}}
                     </div>
                 </div>
                 <main class="page gallery-page">
@@ -59,10 +54,16 @@
                         </div>
                     </section>
                 </main>
-
-                <a class="btn btn-primary main" href="/{{categoryId}}/design/{{designId}}/flair/new">+ Add
-                    More
-                    Flair!</a>
+                <div class="delete-button">
+                    <form class="delete-form" action="/{{flairId}}?_method=DELETE" method="POST">
+                        <input class="action-btn btn btn-danger" type="submit" value="DELETE">
+                        <a class="action-btn btn btn-primary" type="button"
+                            href="/{{category.id}}/design/{{design.id}}/flair/{{flair.id}}/edit">EDIT</a>
+                    </form>
+                </div>
+                {{!-- {{!-- {{!-- <a class="btn btn-primary main" href="/{{categoryId}}/design/{{designId}}/flair/new">+ Add  --}}
+                {{!-- More
+                    Flair!</a>  --}}
             </div>
         </div>
     </section>

@@ -2,7 +2,6 @@ const { Categories, Design, Flair } = require('../models/Categories.js')
 
 const flairController = {
     index: (req, res) => {
-        //res.send(`Hey, Jess!`)
         Flair.find().then(flair => {
             res.render('flair/index', {
                 flair,
@@ -12,21 +11,13 @@ const flairController = {
         })
     },
     new: (req, res) => {
-        //res.send(`Hey Jess, this is the new form!`)
-        // res.render('flair/new')
+
         let { categoryId, designId, flairId } = req.params
-            // Flair.findById(flairId).then(flair => {
-            //let flairItem = flair.flairItem.id(flairId)
-            //     console.log(flairId)
-            // Flair.findById(flairId).then(flair => {
-            //     let flairItem = flair.flairItem.id(flairId)
-            // })
         res.render('flair/new', {
-                categoryId,
-                designId,
-                flairId,
-            })
-            // })
+            categoryId,
+            designId,
+            flairId,
+        })
     },
     create: (req, res) => {
         Flair.create(req.body).then(flair => {
@@ -35,7 +26,6 @@ const flairController = {
         })
     },
     show: (req, res) => {
-        //res.send(`Hey, Jess`)
         let { categoryId, designId, flairId } = req.params
         Flair.findById(req.params.flairId).then(flair => {
             // let flairItem = category.flairItem.id(designId)
@@ -46,7 +36,18 @@ const flairController = {
                 categoryId
             })
         })
+    },
+    edit: (req, res) => {
+        //res.send(`hi`)
+        let { categoryId, designId, flairId } = req.params
+        Flair.findById(req.params.flairId).then(flair => {
+            res.render('flair/edit', {
+                flair,
+                flairId,
+            })
+        })
     }
+
 }
 
 module.exports = flairController

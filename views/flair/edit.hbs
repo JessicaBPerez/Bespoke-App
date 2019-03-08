@@ -1,7 +1,9 @@
 <section class="clean-block clean-form dark">
     <div class="container">
         <div class="block-heading">
-            <h2 class="text-info">Add More <span class="design">Flair</span></h2>
+            <h2 class="text-info">Edit Your Flair</h2>
+            <h2 class="category-pink">{{flair.flairName}}</h2>
+            <a href="/{{category.id}}">Back</a>
             <p>Add more color schemes, room inspiration, and descriptions to further personalize your style! ♡</p>
         </div>
         {{!-- {{!-- {{!-- <form action="/{{categoryId}}/design/{{designId}}/flair" method="POST">  --}}
@@ -38,7 +40,7 @@
                 <label for="flairFurnitureDescription">Design Advice / Comments</label>
                 <textarea class="form-control" type="text" name="flairFurnitureDescription"
                     id="flairFurnitureDescription">
-            </textarea>
+                </textarea>
             </div>
             <div class="form-group">
                 <label for="storeInfo">Where to Buy</label>
