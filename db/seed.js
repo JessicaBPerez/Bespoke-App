@@ -86,7 +86,7 @@ const eclecticInfo = new Design({
 
 
 const glam = new Categories({
-    categoriesImg: "https://secureservercdn.net/ip-ad.mwp2.iad2.secureserver.net/ogu.8d6.godaddywp.com/wp-content/uploads/2018/05/modern-glam-decor-how-to-decorate.jpg",
+    categoriesImg: "https://i.pinimg.com/564x/68/89/b4/6889b4780aba519b3ad2417738548240.jpg",
     category: "Glam",
     description: "Beautiful, feminine, and clean design with shimmering accents is at the heart of this style.",
     designItems: [glamInfo]
