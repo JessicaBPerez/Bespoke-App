@@ -18,7 +18,7 @@ const princessRoom = new Flair({
 const glamInfo = new Design({
     category: "Glam",
     collectionPalletImg: "https://cdn.kitchencabinetkings.com/media/siege/kitchen-color-schemes/kitchen-color-schemes_6_all-white.jpg",
-    collectionPalletDescription: "Glam pallet description.",
+    collectionPalletDescription: "Golden shimmers, pink pastels, purple lavender, and white marble, these are all of the hallmarks of Glam. For a more cohesive look, maintain color pairing within hexagon color families: pastels with pastels, neutrals with neutrals, and shimmers with shimmers.",
     storeInfo: ["TJ Maxx", "Pier One", "West Elm"],
     furnitureImg1: "https://i.pinimg.com/564x/b1/25/57/b12557e4d135cb736872b667298ce68a.jpg",
     furnitureImg2: "https://i.pinimg.com/564x/f1/fe/f8/f1fef822c95649c29f21e76572a95d98.jpg",
@@ -30,7 +30,7 @@ const glamInfo = new Design({
 const modernInfo = new Design({
     category: "Modern",
     collectionPalletImg: "https://cdn.kitchencabinetkings.com/media/siege/kitchen-color-schemes/kitchen-color-schemes_30_all-black.jpg",
-    collectionPalletDescription: "Modern pallet description",
+    collectionPalletDescription: "Bold dark colors, contrasted with warm neutral tones is hallmark of Modern design. Dark color elements compliment their lighter counterparts well. The finishing design will be a room for the modern extraordinair.",
     storeInfo: ["Room and Board", "Direct Furniture Outlet", "Switch Modern"],
     furnitureImg1: "https://i2.wp.com/trendehouse.com/wp-content/uploads/2018/12/Stunning-Modern-House-Design-Interior-Ideas-18.jpg",
     furnitureImg2: "https://i1.wp.com/trendehouse.com/wp-content/uploads/2018/12/Stunning-Modern-House-Design-Interior-Ideas-10.jpg",
@@ -41,7 +41,7 @@ const modernInfo = new Design({
 const rusticInfo = new Design({
     category: "Rustic",
     collectionPalletImg: "https://cdn.kitchencabinetkings.com/media/siege/kitchen-color-schemes/kitchen-color-schemes_11_pink-and-white.jpg",
-    collectionPalletDescription: "rustic pallet description",
+    collectionPalletDescription: "Dusty rose, copperfield, oatmeal, silver, and a hint of gold define the beauty of rustic design to bring a natural organic aesthetic with a hint of glam that is perfect for one wanting to acheive the perfect balance between nature, and glam.",
     storeInfo: ["Kirkalnds", "Rustic Trades Furniture", "Joss and Main"],
     furnitureImg1: "https://i0.wp.com/trendehouse.com/wp-content/uploads/2019/01/The-Best-Rustic-Interior-Design-Ideas-To-Bring-Unique-Look-03.jpg",
     furnitureImg2: "https://i2.wp.com/www.remodelaholic.com/wp-content/uploads/2015/08/rustic-glam-kitchen-island.jpg",
@@ -52,7 +52,7 @@ const rusticInfo = new Design({
 const traditionalInfo = new Design({
     category: "Traditonal",
     collectionPalletImg: "https://cdn.kitchencabinetkings.com/media/siege/kitchen-color-schemes/kitchen-color-schemes_24_green-and-brown.jpg",
-    collectionPalletDescription: "traditional pallet description",
+    collectionPalletDescription: "Reds, avacodo, pueblo, cinnamon, browns, and beiges define the color scheme of traditional design.",
     storeInfo: ["Ashley Home Furniture", "Birch Lane", "Ethan Allen"],
     furnitureImg1: "https://i.pinimg.com/564x/dd/79/ce/dd79ce32befb05f1045347ac739c83d2.jpg",
     furnitureImg2: "https://i.pinimg.com/564x/f0/45/ae/f045ae06851b6803890d76d63ae22150.jpg",
@@ -63,7 +63,7 @@ const traditionalInfo = new Design({
 const frenchInfo = new Design({
     category: "French",
     collectionPalletImg: "https://cdn.kitchencabinetkings.com/media/siege/kitchen-color-schemes/kitchen-color-schemes_6_all-white.jpg",
-    collectionPalletDescription: "french pallet description",
+    collectionPalletDescription: "Regal golds, iron, pinks, turquiose and creams are the color pallets of royalty. Stay within a light colorframe to truly represent the style of French design. A hint of velvet turquoise would be the perfect accent to the color schemes somewhere in the room.",
     storeInfo: ["Joss and Main", "Pier One", "Serena and Lily"],
     furnitureImg1: "http://roomary.info/wp-content/uploads/2018/07/Marvelous-And-Luxury-Living-Room-Decoration-21.jpg",
     furnitureImg2: "http://roomary.info/wp-content/uploads/2018/07/Marvelous-And-Luxury-Living-Room-Decoration-29.jpg",
