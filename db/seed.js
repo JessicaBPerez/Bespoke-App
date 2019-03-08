@@ -128,12 +128,11 @@ const eclectic = new Categories({
 
 //Removes any duplicate categories and re-seeds
 Categories.remove({})
-    //.then(() => Food.remove({}))
     .then(() => Categories.create([glam, modern, rustic, traditional, french, eclectic]))
+Design.remove({})
     .then(() => Design.create([glamInfo, modernInfo, rusticInfo, traditionalInfo, frenchInfo, eclecticInfo]))
 Flair.remove({})
     .then(() => Flair.create([princessRoom]))
-    //.then(() => Food.insertMany([pizza, injera, padThai, fishTaco]))
     .then(() => {
         console.log("seeded successfully");
         mongoose.connection.close();
